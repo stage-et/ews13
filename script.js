@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
   pg.addEventListener("click", function () {
     clickCount=speed;
     counter.textContent = clickCount + "ms";
-    if(speed>300)
+    if(speed>200)
       speed-=100;
     clearInterval(moving)
     moving = setInterval(move, speed);
